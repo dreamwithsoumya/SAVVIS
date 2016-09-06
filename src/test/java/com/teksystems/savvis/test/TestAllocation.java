@@ -16,12 +16,12 @@ public class TestAllocation {
 	@Test
 	public void testAllocation_ReturnNewObject() {
 		allocation = new Allocation(null);
-		Assert.assertNotNull(allocation);
+		Assert.assertNotNull("allocation object is not null",allocation);
 	}
 
 	
 	@Test
-	public void getAllocation_whenManagerHasOneManagerAndTwoEmployees_shouldReturn_2100() {
+	public void getAllocation_ManagerHasOneReportingManagerAndTwoEmployees_Return_2100() {
 		Manager managerA = new Manager();  // create a new Manager
 		Manager managerB = new Manager();  // create a new Reporting Manager 
 		BigDecimal expectedallocation = new BigDecimal("2100");
@@ -33,7 +33,7 @@ public class TestAllocation {
 		
 		
 		allocation = new Allocation(managerA); // get allocation for Manager
-		Assert.assertEquals(allocation.getAllocation(),expectedallocation);
+		Assert.assertEquals("Manager will get 2100",allocation.getAllocation(),expectedallocation);
 	}
 
 }

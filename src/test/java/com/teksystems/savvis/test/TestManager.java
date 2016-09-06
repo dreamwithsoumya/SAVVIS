@@ -14,14 +14,14 @@ Manager manager;
 @Test
 public void testMAnager_ReturnNewObject() {
 	manager = new Manager();
-	Assert.assertNotNull(manager);
+	Assert.assertNotNull("manager object is not null",manager);
 }
 	
 	@Test
 	public void getAllocation_oneManagerShouldReturn300(){
 		
 		manager = new Manager();
-		 Assert.assertEquals(manager.allocation(),BigDecimal.valueOf(300));
+		 Assert.assertEquals("acclocation for the manager will be 300",manager.allocation(),BigDecimal.valueOf(300));
 		
 	}
 

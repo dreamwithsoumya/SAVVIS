@@ -15,7 +15,7 @@ public class TestDepertment {
 	@Test
 	public void testDepertment_shouldReturnNewObject() {
 		depertment = new Depertment();
-		Assert.assertNotNull(depertment);
+		Assert.assertNotNull("depertment object is not null",depertment);
 	}
 	
 	@Test
@@ -23,7 +23,7 @@ public class TestDepertment {
 		depertment = new Depertment();
 		depertment.add(new Manager());
 		depertment.add(new Manager());
-		Assert.assertEquals(depertment.allocation(),BigDecimal.valueOf(600));
+		Assert.assertEquals("Total allocation for the depertment will be 600",depertment.allocation(),BigDecimal.valueOf(600));
 	}
 
 }

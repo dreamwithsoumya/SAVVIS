@@ -13,14 +13,14 @@ Tester tester;
 @Test
 public void testQATester_ReturnNewObject() {
 	tester = new Tester();
-	Assert.assertNotNull(tester);
+	Assert.assertNotNull("tester object is not null",tester);
 }
 	
 	@Test
 	public void getAllocation_oneTesterShouldReturn500(){
 		
 		tester = new Tester();
-		 Assert.assertEquals(tester.allocation(),BigDecimal.valueOf(500));
+		 Assert.assertEquals("acclocation for the tester will be 500",tester.allocation(),BigDecimal.valueOf(500));
 		
 	}
 

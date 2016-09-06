@@ -15,14 +15,14 @@ public class TestDeveloper {
 	@Test
 	public void testDeveloper_ReturnNewObject() {
 		developer = new Developer();
-		Assert.assertNotNull(developer);
+		Assert.assertNotNull("developer object is not null",developer);
 	}
 	
 	@Test
 	public void getAllocation_oneDeveloperShouldReturn1000(){
 		
 		developer = new Developer();
-		 Assert.assertEquals(developer.allocation(),BigDecimal.valueOf(1000));
+		 Assert.assertEquals("acclocation for the developer will be 1000",developer.allocation(),BigDecimal.valueOf(1000));
 		
 	}
 	
