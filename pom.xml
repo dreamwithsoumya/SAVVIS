@@ -69,6 +69,11 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.2.0.Final</version>
+		</dependency>
 	</dependencies>
 	<name>SAAVIS coding  chalange</name>
   <description>calculate total depertment and managers monthly expense</description>
