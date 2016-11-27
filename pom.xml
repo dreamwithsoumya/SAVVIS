@@ -3,7 +3,14 @@
   <groupId>org.teksystems.savvis</groupId>
   <artifactId>SAVVIS</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SAAVIS coding  chalange</name>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
+	<name>SAAVIS coding  chalange</name>
   <description>calculate total depertment and managers monthly expense</description>
   
   <build>
